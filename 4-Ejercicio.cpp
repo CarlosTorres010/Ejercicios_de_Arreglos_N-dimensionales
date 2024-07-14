@@ -7,8 +7,6 @@ de 4x4 y muestre la matriz resultante.
 #include <iostream>
 using namespace std;
 
-const int N = 4; 
-
 void intercambiarFilas(int matriz[4][4], int fila1, int fila2) {
     if (fila1 >= 0 && fila1 < 4 && fila2 >= 0 && fila2 < 4) {
         for (int j = 0; j < 4; j++) {
@@ -40,9 +38,8 @@ int main() {
     int filaIntercambiar1 = 0; 
     int filaIntercambiar2 = 3; 
 
-    cout << "Matriz original:" << endl;
+    cout << "La matriz original es:" << endl;
     mostrarMatriz(matriz);
-
     intercambiarFilas(matriz, filaIntercambiar1, filaIntercambiar2);
 	mostrarMatriz(matriz);
 	return 0;
